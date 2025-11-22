@@ -1,0 +1,238 @@
+:root{
+   --main-color:rgba(123, 99, 168, 255) ;
+    --main--color2: #777777;
+    --font-fmliy:"Cuorier New" , Cuorier , monospce;
+}
+*{
+    margin: 0;
+    padding: 0 ;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.aidedar{
+    width: 110px ;
+    height: 100vh ;
+    top: 0;
+    left: 0 ;
+    bottom: 0; 
+    position: sticky;
+    padding: 0 1.7rem;
+    color: white;
+    overflow: hidden;
+    transition: all 0,5s linear;
+    background: var(--main-color);
+}
+.aidedar:hover{
+    width: 250px ;  /* تغير حجم sidedar */
+    transition: 0.5s ;
+}
+.img{
+    padding: 16px ;
+    height: 80px ;
+}
+.main{
+    position: relative;
+    list-style: none;
+    height: 88% ;
+    padding: 0 ;
+}
+.main li{
+    margin: 8px 0;
+    padding: 1rem;
+    border-radius: 8px ;
+    transition: all 0.5s ease-in-out;
+}
+.main li:hover
+,.active{
+    background-color: #e0e0e058;
+}
+.main li a{
+    color: white;
+    font-size: 17px ; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px ;
+}
+.main a span{
+    overflow: hidden;
+}
+.main a i{
+    font-size: 20px ;
+}
+.main .logdut{
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+}
+
+/* *** main--content ***** */
+.main--content{
+    position: relative;
+    width: 100% ;
+    background: #ddd;
+    padding: 1rem;
+}
+.header--wrapper .logo{
+    width: 50px;
+    height: 50px ;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+.header--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px ;
+    padding: 10px 2rem ;
+    margin-bottom: 1rem;
+}
+.header-title{
+    color: var(--main-color);
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem ;
+}
+.--box{
+    background: rgb(237, 237, 237);
+    clear: var(--main-color);
+    display: flex;
+    align-items: center;
+    padding: 4px 14px ;
+    gap: 5px;
+    border-radius: 15px ;
+}
+.--box input{
+    background: transparent;
+    padding: 10px ;
+}
+.--box i{
+    font-size: 1.2rem;
+    transition: all  0,5 ease-out;
+    cursor: pointer;
+}
+.--box i:hover{
+    transform: scale(1.2);
+}
+                /*   ***** card--container**** */
+.card--container{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px ;
+}
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem ;
+}
+.main--containr{
+    color: var(--main-color);
+    padding-bottom: 10px ;
+    font-size: 20px  ;
+}
+.payment-card{
+    background: #eee;
+    border-radius: 10px ;
+    padding: 1.2rem ;
+    width: 290px ;
+    height: 150px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.payment-card:hover{
+    transform: translateY(-5px );
+}
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px ;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+.titel{
+    font-size: 24px  ;
+    font-weight: 300;
+}
+.-value{
+    font-size: 25px ;
+    font-weight:normal ;
+}
+.icon{
+    color: white;
+    padding: 1rem ;
+    height: 60px ;
+    width: 60px ;
+    text-align: center;
+    border-radius: 50% ;
+    font-size: 1.2rem;
+    background-color: var(--main-color);
+}
+.card--betail{
+    font-size: 18px ;
+    letter-spacing: 2px ;
+    font-family: var(--font-fmliy);
+}
+.table--wrapper{
+    background: white;
+    margin-top: 1rem ;
+    padding: 2rem;
+    border-radius: 10px ;
+}
+.able-container{
+    width: 100% ;
+}
+table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+.tr2{
+    background: #eee;
+}
+thead{
+    background: var(--main-color);
+    color: white;
+}
+th {
+    padding: 15px ;
+    text-align: center;
+}
+tbody{
+    background: white;
+}
+td{
+    padding: 15px ;
+    font-size: 16px ;
+    color:#333 ;
+    font-weight: 800;
+}
+tr:nth-child(even){
+    background: #fff;
+}
+tfoot{
+    background: var(--main-color);
+    font-weight: bold;
+    color: white;
+}
+tfoot td{
+    padding: 15px ;
+    color: white;
+}
+.table-container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+                /*   ***** card--container**** */
